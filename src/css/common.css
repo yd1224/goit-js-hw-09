@@ -10,9 +10,53 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  padding-left: 20px;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+.timer {
+  display: flex;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  align-items: center;
+}
+.value {
+  font-size: 45px;
+}
+.label {
+  text-transform: uppercase;
+}
+#datetime-picker {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 8px;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+button {
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  transition: background-color 500ms ease-in-out;
+}
+button:disabled,
+button[disabled] {
+  background-color: #dddddd;
+  color: #888888;
+  cursor: not-allowed;
+  border: 1px solid #aaaaaa;
 }
